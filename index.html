@@ -7,7 +7,7 @@
   <meta charset="utf-8"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" rel="stylesheet"/>
-  <title>css-animation@1.2.6 - css-animation</title>
+  <title>css-animation@1.3.0 - css-animation</title>
   <style>
     @font-face {
       font-family: octicons-anchor;
@@ -737,7 +737,7 @@
 
 <body>
 <div class="header">
-  <h1>css-animation@1.2.6</h1>
+  <h1>css-animation@1.3.0</h1>
 </div>
 <div class="examples">
   <h3>EXAMPLES</h3>
@@ -785,9 +785,9 @@ anim(el,animationName,<span class="hljs-function"><span class="hljs-keyword">fun
         </tr>
         <tr>
           <td>animationName</td>
-          <td>String</td>
+          <td>String|Object</td>
           <td></td>
-          <td>will add animationName as class to el,then setTimeout 0 to add ${animationName}-active to el</td>
+          <td>will add animationName (if string) or animationName.name (if object) as class to el, then setTimeout 0 to add ${animationName}-active (if string) or animationName.active (if object) to el</td>
         </tr>
         <tr>
           <td>callback</td>
