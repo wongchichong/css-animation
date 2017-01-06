@@ -23,7 +23,7 @@ webpackJsonp([0],[
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var style = '\n\n.box {\n  background:red;\n  width:100px;\n  height:100px;\n}\n.collapse-active {\n  transition: height .3s ease-out;\n}\n\n';
 	
@@ -35,7 +35,7 @@ webpackJsonp([0],[
 	  b.disabled = true;
 	  t.style.display = '';
 	  var height = void 0;
-	  (0, _cssAnimation2["default"])(t, 'collapse', {
+	  (0, _cssAnimation2.default)(t, 'collapse', {
 	    start: function start() {
 	      if (show) {
 	        t.style.height = t.offsetHeight + 'px';
@@ -56,12 +56,12 @@ webpackJsonp([0],[
 	  show = !show;
 	}
 	
-	_reactDom2["default"].render(_react2["default"].createElement(
+	_reactDom2.default.render(_react2.default.createElement(
 	  'div',
 	  null,
-	  _react2["default"].createElement('style', { dangerouslySetInnerHTML: { __html: style } }),
-	  _react2["default"].createElement('div', { className: 'box', id: 't' }),
-	  _react2["default"].createElement(
+	  _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: style } }),
+	  _react2.default.createElement('div', { className: 'box', id: 't' }),
+	  _react2.default.createElement(
 	    'button',
 	    { onClick: toggle, id: 'b' },
 	    'toggle'

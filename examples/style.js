@@ -25,7 +25,7 @@ webpackJsonp([2],{
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var style = '\n.box {\n  background:red;\n  width:100px;\n  height:100px;\n}\n';
 	
@@ -37,25 +37,25 @@ webpackJsonp([2],{
 	  b.disabled = true;
 	  t.style.visibility = '';
 	  t.style.opacity = show ? 1 : 0;
-	  _cssAnimation2["default"].setTransition(t, 'opacity 2s ease-in');
-	  _cssAnimation2["default"].style(t, show ? {
+	  _cssAnimation2.default.setTransition(t, 'opacity 2s ease-in');
+	  _cssAnimation2.default.style(t, show ? {
 	    opacity: 0
 	  } : {
 	    opacity: 1
 	  }, function () {
 	    t.style.visibility = show ? '' : 'hidden';
 	    b.disabled = false;
-	    _cssAnimation2["default"].setTransition(t, '');
+	    _cssAnimation2.default.setTransition(t, '');
 	  });
 	  show = !show;
 	}
 	
-	_reactDom2["default"].render(_react2["default"].createElement(
+	_reactDom2.default.render(_react2.default.createElement(
 	  'div',
 	  null,
-	  _react2["default"].createElement('style', { dangerouslySetInnerHTML: { __html: style } }),
-	  _react2["default"].createElement('div', { className: 'box', id: 't' }),
-	  _react2["default"].createElement(
+	  _react2.default.createElement('style', { dangerouslySetInnerHTML: { __html: style } }),
+	  _react2.default.createElement('div', { className: 'box', id: 't' }),
+	  _react2.default.createElement(
 	    'button',
 	    { onClick: toggle, id: 'b' },
 	    'toggle'
